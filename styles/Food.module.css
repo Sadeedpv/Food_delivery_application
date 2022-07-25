@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    gap: 5rem;
+    margin-top: 1.5em;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.image{
+    overflow: hidden;
+    position: relative;
+    width: 30rem;
+    border-radius: 2rem;
+    height: 25rem;
+}
+
+.details{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column; 
+}
+.details>:nth-child(1){
+    color: var(--themeRed);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.details>:nth-child(2){
+    color: var(--gray);
+    font-size: 1.4rem;
+    text-align: left;
+    max-width: 35rem;
+    margin-top:1.5rem;
+}
+.price{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+.dollar{
+    font-size: larger;
+    color: var(--themeRed);
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
+
+.quantity{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.45rem;
+}
+.quantityNo{
+    margin: 0 20px 0 20px;
+    color: black;
+    font-weight: 900;
+}
+.button{
+    margin-top: 2rem;
+}
+
+@media (max-width:450px){
+    .image{
+        width: 25rem;
+        height: 20rem;
+    }
+    .details{
+        margin-left: 0rem;
+    }
+}

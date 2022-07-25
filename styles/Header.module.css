@@ -1,0 +1,77 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+.menu{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    z-index: 111;
+    font-size: clamp(1rem, 2.5vw, 1.3rem); 
+    transition: all 0.3s ease-in-out;
+}
+
+.menu>li:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3.4px;
+}
+
+.flexEnd{
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 111;
+    margin-right: 10px;
+}
+
+.logoheader{
+    padding-left: 1rem;
+    font-size: clamp(1.8rem, 2.5vw, 3.4rem); 
+    white-space: nowrap;
+    transition: 0ms;
+}
+
+.logoheader:hover{
+    color: var(--themeRed);
+}
+.logoheader::first-letter{
+    color: red;
+}
+
+.span{
+    position: absolute;
+    background-color:var(--themeRed);
+    border-radius: 50%;
+    padding: 3px;
+    height:25px;
+    width: 25px;
+    text-align: center;
+    top: -8px;
+    right: -4px;
+    z-index: 112;
+    color: white;
+}
+
+@media (max-width: 520px){
+    .menu{
+        display: none !important;
+    }
+}
+

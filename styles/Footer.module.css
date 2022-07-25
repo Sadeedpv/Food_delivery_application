@@ -1,0 +1,21 @@
+.footer{
+    display: grid;
+    place-items: center;
+    white-space: nowrap;
+    font-size: larger;
+    letter-spacing: 4px;
+    margin-top: 6rem;
+    background: linear-gradient(1deg, rgba(255, 237, 237, 0.85) 0%,
+    rgba(255, 255, 255,) 14rem);
+}
+.icons{
+    display: flex;
+    place-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+    transition: 200ms;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+}

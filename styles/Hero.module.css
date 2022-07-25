@@ -1,0 +1,94 @@
+.hero{
+    display: flex;
+    position: relative;
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heroImage{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: var(--padding);
+    font-size: 0.8rem;
+    color: var(--themeRed);
+    font-weight: bold;
+    margin-top: 3rem;
+    background-color: var(--pink);
+    border-radius: 4rem;
+    -webkit-box-shadow: -2px 7px 17px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 7px 17px -12px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 17px -12px rgba(0,0,0,0.75);
+}
+
+.Herotext{
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.subpara{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 70%;
+    color: var(--gray);
+}
+.HeroEnd{
+    position: relative;
+    flex: 1;
+    margin-left: 4rem;
+}
+
+.imgContainer{
+    width: 43rem;
+    position: absolute;
+    top: -5rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    position: absolute;
+    padding: 1rem;
+    border-radius: 5rem;
+    top: 6rem;
+    gap: 1rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    color: var(--themeRed);
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+.contact>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.contact:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:520px){
+    .contact{
+        display: none;
+    }
+}
