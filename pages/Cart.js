@@ -4,6 +4,7 @@ import styles from '../styles/Cart.module.css'
 import cart from '../assets/cart.png'
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export default function Cart(){
     const [food, setfood] = useState();
@@ -75,7 +76,7 @@ export default function Cart(){
                             height={400}
                             objectFit="contain"
                             />
-                            <h1>Your cart is empty!</h1>
+                            <h1>Your cart is empty! Go to our <Link href='/#menu'><a className={styles.link}>Menu</a></Link></h1>
                         </div>
                     )}
                 </div>

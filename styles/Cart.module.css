@@ -74,6 +74,11 @@
     color: var(--themeRed);
 }
 
+.link{
+    text-decoration: underline;
+    color: var(--themeRed);
+}
+
 @media (max-width:845px){
     .flex{
         gap: 1rem;
