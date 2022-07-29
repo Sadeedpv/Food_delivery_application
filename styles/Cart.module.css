@@ -85,3 +85,9 @@
         justify-content: flex-start;
     }
 }
+
+@media (max-width:625px){
+    .emptyCart{
+        font-size: 1.5rem;
+    }
+}
